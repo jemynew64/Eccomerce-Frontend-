@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+/* 🎨 Tu configuración de tema personalizada */
+@theme {
+  --color-primary: #f28226;
+  --color-background-light: #f8f7f5;
+  --color-background-dark: #221810;
+  --color-text-primary-dark: #ffffff;
+  --color-text-secondary-dark: #b7a597;
+  --color-card-dark: #2d2016;
+
+  --font-display: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
