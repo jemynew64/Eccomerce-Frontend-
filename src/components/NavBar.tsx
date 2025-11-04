@@ -30,10 +30,10 @@ export const NavBar: FC = () => {
               Categorías
             </Link>
             <Link
-              to="/mangas"
+              to="/Productos"
               className="text-sm font-medium text-amber-50 transition-colors hover:text-primary"
             >
-              Mangas
+              Productos
             </Link>
             <Link
               to="/colecciones"
@@ -70,16 +70,13 @@ export const NavBar: FC = () => {
           </button>
 
           {/* Cart */}
-          <button
-            type="button"
+          <Link
+            to="/cart"
             aria-label="Shopping cart"
             className="flex h-10 w-10 items-center justify-center rounded-lg bg-card-dark text-text-primary-dark transition-colors hover:bg-border-dark"
-            onClick={() =>
-              console.log("hola mundo soy jemal leon dueñas")
-            }
           >
             <IconShoppingCart stroke={1.5} />
-          </button>
+          </Link>
         </div>
       </div>
     </header>

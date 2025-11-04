@@ -3,12 +3,13 @@ import {  Routes, Route } from 'react-router-dom'
 import { Form } from './pages/Form'
 import Home from './pages/Home'
 import Categorias from './pages/Categorias'
-import Mangas from './pages/Mangas'
 import Colecciones from './pages/Colecciones'
 import Login from './pages/Login'
+import {Product} from './pages/Product'
 import Registro from './pages/Registro'
 import MainLayout from './layouts/MainLayout'
 import AuthLayout from './layouts/AuthLayout'
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/categorias" element={<Categorias />} />
-        <Route path="/mangas" element={<Mangas />} />
+        <Route path="/productos" element={<Product />} />
         <Route path="/colecciones" element={<Colecciones />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/cart" element={<Cart />} />
       </Route>
 
       <Route element={<AuthLayout />}>
