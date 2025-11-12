@@ -32,7 +32,7 @@ export const useCart = create<CartState>()(
       // ➕ Agregar producto al carrito
       add: (product, quantity = 1) => {
         const items = get().items
-        const existing = items.find(i => i.product.id_producto === product.id_producto)
+        const existing = items.find(i => i.product.idProducto === product.idProducto)
 
         if (existing) {
           // Si ya existe, actualizamos cantidad
@@ -43,7 +43,7 @@ export const useCart = create<CartState>()(
           }
           set({
             items: items.map(i =>
-              i.product.id_producto === product.id_producto
+              i.product.idProducto === product.idProducto
                 ? { ...i, quantity: i.quantity + quantity }
                 : i
             ),

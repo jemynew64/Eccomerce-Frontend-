@@ -39,11 +39,11 @@ const Cart = () => {
               <div key={item.id} className="card-anime p-4">
                 <div className="flex gap-4">
                   <Link
-                    to={`/productos/${item.product.id_producto}`}
+                    to={`/productos/${item.product.idProducto}`}
                     className="w-24 h-24  overflow-hidden rounded-lg"
                   >
                     <img
-                      src={item.product.imagen}
+                      src={item.product.imagenUrl}
                       alt={item.product.nombre}
                       className="w-full h-full object-cover"
                     />
@@ -51,7 +51,7 @@ const Cart = () => {
 
                   <div className="flex-1 min-w-0">
                     <Link
-                      to={`/productos/${item.product.id_producto}`}
+                      to={`/productos/${item.product.idProducto}`}
                       className="font-semibold hover:text-primary transition-colors line-clamp-2"
                     >
                       {item.product.nombre}

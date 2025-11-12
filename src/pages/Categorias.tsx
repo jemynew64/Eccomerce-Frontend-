@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getProductos } from '../services/productService'
-import type { Product } from '../services/productService'
-
+import type { Product } from "@/types"
 export default function Categorias() {
 
  const [data, setData] = useState<Product[] | null>(null)

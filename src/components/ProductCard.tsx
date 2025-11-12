@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ShoppingCart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
+import { Badge } from '@/components/ui/Badge'
 import { useCart } from '@/stores/useCart' // ← usa tu store Zustand
 import type { Product } from '@/types'
 
@@ -18,12 +18,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
   }
 
   return (
-    <Link to={`/products/${product.id_producto}`}>
+    <Link to={`/products/${product.idProducto}`}>
       <div className="group flex h-full flex-col overflow-hidden rounded-xl border bg-background transition-shadow hover:shadow-lg">
         {/* Imagen */}
         <div className="relative aspect-square overflow-hidden bg-secondary">
           <img
-            src={product.imagen}
+            src={product.imagenUrl}
             alt={product.nombre}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
           />

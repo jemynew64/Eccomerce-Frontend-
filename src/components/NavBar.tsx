@@ -35,12 +35,12 @@ export const NavBar: FC = () => {
             >
               Productos
             </Link>
-            <Link
+            {/* <Link
               to="/colecciones"
               className="text-sm font-medium text-amber-50 transition-colors hover:text-primary"
             >
               Nuevas colecciones
-            </Link>
+            </Link> */}
           </nav>
         </div>
 

@@ -35,9 +35,9 @@ export interface Categoria {
 }
 
 export interface Producto {
-	id_producto: number
+	idProducto: number
 	nombre: string
-	imagen: string
+	imagenUrl: string
 	descripcion?: string | null
 	precio: number // NUMERIC(10,2) -> number en TS (puedes usar string si prefieres precisión)
 	stock: number
